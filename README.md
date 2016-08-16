@@ -2,7 +2,7 @@
 这是一个使用parallax.js制作的基于视差动画的友好404页面
 
 # 需要
-parallax.js
+parallax.js  
 JQuery.js[可自行修改为普通js代码]
 
 # 写在后面
