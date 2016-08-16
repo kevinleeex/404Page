@@ -6,7 +6,7 @@ parallax.js
 JQuery.js[可自行修改为普通js代码]
 
 # 预览
-
+![demo](/demo.gif)
 
 # 写在后面
 > 一些图片素材来自互联网
