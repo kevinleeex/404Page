@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>哎呀呀...页面找不到啦~</title>
+    <link rel="stylesheet" type="text/css" href="css/ib2team.css">
+</head>
+<body>
+<div class="container">
+    <ul id="scene">
+        <li class="layer" data-depth="0.1">
+            <img class="sun" src="img/sun.png"/>
+        </li>
+        <li class="layer" data-depth="0.2">
+            <img class="cloud1" src="img/cloud1.png"/>
+            <img class="cloud2" src="img/cloud2.png"/>
+            <img class="cloud3" src="img/cloud3.png"/>
+        </li>
+        <li class="layer" data-depth="0.3">
+            <img class="mountain" src="img/mountain.png"/>
+        </li>
+        <li class="layer" data-depth="0.5">
+            <div class="balloon-holder">
+                <img class="balloon" src="img/fire_balloon.png" onclick="location='index.html'"/>
+                <span class="words">页面找不到啦，坐热气球回去吧~</span>
+            </div>
+
+        </li>
+        <li class="layer" data-depth="0.6">
+            <div class="wave depth-3"></div>
+        </li>
+        <li class="layer" data-depth="0.8"><img class="logo" src="img/404Logo.png"/></li>
+        <li class="layer" data-depth="0.5">
+            <div class="wave depth-2"></div>
+        </li>
+
+        <li class="layer" data-depth="0.4">
+            <div class="wave depth-1"></div>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Scripts -->
+<script src="js/parallax.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script>
+    // Pretty simple huh?
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+    $(document).ready(function () {
+        $(".balloon-holder").mouseenter(function () {
+            $(".words").animate({opacity: '1'});
+        }).mouseleave(function () {
+            $(".words").animate({opacity: '0.4'});
+        });
+    });
+</script>
+</body>
+</html>
