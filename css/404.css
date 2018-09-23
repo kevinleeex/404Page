@@ -73,6 +73,16 @@ body {
     width: 100px;
     height: 100px;
 }
+.words_on {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: "Consolas", "Menlo", "Courier", monospace;
+    font-size: 20px;
+    opacity: 1;
+    transition: 100ms;
+    color: #FFFFFF;
+    width: 100px;
+    height: 100px;
+}
 
 .balloon-holder {
     -webkit-animation: anim-balloon 3s 0.1s infinite alternate linear;

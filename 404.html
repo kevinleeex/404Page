@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>哎呀呀...页面找不到啦~</title>
-    <link rel="stylesheet" type="text/css" href="css/ib2team.css">
+    <link rel="stylesheet" type="text/css" href="css/404.css">
 </head>
 <body>
 <div class="container">
@@ -21,9 +21,9 @@
             <img class="mountain" src="img/mountain.png"/>
         </li>
         <li class="layer" data-depth="0.5">
-            <div class="balloon-holder">
+            <div class="balloon-holder" id="balloon-holder">
                 <img class="balloon" src="img/fire_balloon.png" onclick="location='index.html'"/>
-                <span class="words">页面找不到啦，坐热气球回去吧~</span>
+                <span class="words" id="words">页面找不到啦，坐热气球回去吧~</span>
             </div>
 
         </li>
@@ -44,18 +44,18 @@
 
 <!-- Scripts -->
 <script src="js/parallax.js"></script>
-<script src="js/jquery-1.12.3.min.js"></script>
 <script>
 
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
-    $(document).ready(function () {
-        $(".balloon-holder").mouseenter(function () {
-            $(".words").animate({opacity: '1'});
-        }).mouseleave(function () {
-            $(".words").animate({opacity: '0.4'});
-        });
-    });
+    var balloon = document.getElementById('balloon-holder');
+    var words = document.getElementById('words')
+    balloon.onmouseover = function () {
+        words.className = "words_on";
+    };
+    balloon.onmouseout = function () {
+        words.className = "words";
+    };
 </script>
 </body>
 </html>
