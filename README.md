@@ -1,6 +1,8 @@
 # SunIsland 404 Page
 ## 概述
-这是一个使用parallax.js制作的基于视差动画的友好404页面.[Demo](http://lidengju.com/404)
+这是一个使用parallax.js制作的基于视差动画的友好404页面.
+
+[[Demo](http://lidengju.com/404)]
 
 ## 需要
 parallax.js  
